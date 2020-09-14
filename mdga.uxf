@@ -1,0 +1,30 @@
+<diagram program="umletino" version="14.3.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>310</x><y>280</y><w>110</w><h>60</h></coordinates><panel_attributes>Figurine
+--
+color: PlayerColor
+number: int</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>120</x><y>70</y><w>100</w><h>40</h></coordinates><panel_attributes>&lt;&lt;Enum&gt;&gt;
+PlayerColor</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>480</x><y>170</y><w>100</w><h>40</h></coordinates><panel_attributes>&lt;&lt;Enum&gt;&gt;
+FieldIdentifier</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>480</x><y>270</y><w>140</w><h>60</h></coordinates><panel_attributes>Field
+--
+identifier: FieldIdentifier
+figurine: Figurine</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>440</x><y>400</y><w>290</w><h>180</h></coordinates><panel_attributes>Board
+--
+fields: List&lt;Field&gt;
+--
+getFields: List&lt;Field&gt;
+clear():void
+move(figurine: Figurine, steps: int):void
+canMove(figurine: Figurine, steps: int):boolean
+enter(figurine: Figurine):void
+canEnter(figurine: Figurine): boolean
+isInStart(figurine: Figurine): boolean
+hasFiguresInGame(player Player): boolean
+setupStart(figures: List&lt;Figurine&gt;):void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>510</x><y>200</y><w>30</w><h>90</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;70;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>410</x><y>290</y><w>90</w><h>40</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;20;70;20</additional_attributes></element><element><id>Relation</id><coordinates><x>510</x><y>320</y><w>30</w><h>100</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;80;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>190</x><y>100</y><w>180</w><h>200</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;10;160;180</additional_attributes></element><element><id>UMLClass</id><coordinates><x>110</x><y>440</y><w>150</w><h>80</h></coordinates><panel_attributes>Player
+--
+name: String
+color: PlayerColor
+figurines: List&lt;Figures&gt;</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>160</x><y>100</y><w>30</w><h>360</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;10;10;340</additional_attributes></element><element><id>Relation</id><coordinates><x>210</x><y>330</y><w>160</w><h>130</h></coordinates><panel_attributes></panel_attributes><additional_attributes>140;10;10;110</additional_attributes></element><element><id>UMLClass</id><coordinates><x>500</x><y>50</y><w>510</w><h>70</h></coordinates><panel_attributes>WalkPath
+--
+
+--
+getWalkPath(color: PlayerColor, from: FieldIdentifier, steps: int): LinkedList&lt;FieldIdentifier&gt;
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>680</x><y>110</y><w>30</w><h>310</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;10;10;290</additional_attributes></element><element><id>Relation</id><coordinates><x>530</x><y>110</y><w>30</w><h>80</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element><element><id>Relation</id><coordinates><x>210</x><y>60</y><w>310</w><h>40</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;20;290;20</additional_attributes></element><element><id>Relation</id><coordinates><x>380</x><y>330</y><w>80</w><h>150</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;10;60;130</additional_attributes></element></diagram>
